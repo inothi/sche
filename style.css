@@ -1,4 +1,4 @@
-html, body, a, center, div, h1, h2, h3, h4, h5, h6, img, li, ol, p, span, strong, ul {
+html, body, a, center, div, h1, h2, h3, h4, h5, h6, img, p, span, strong, ul, ol, li {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -18,17 +18,17 @@ h1 {
 }
 
 h2 {
-    font-size: 30pt;
+    font-size: 36px;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 24pt;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 h4 {
-    font-size: 12pt;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -60,7 +60,7 @@ nav {
     position: fixed;
 }
 
-ul, ul li {
+nav > ul, ul li {
     list-style: none;
     display: flex;
     align-items: center;
@@ -69,15 +69,15 @@ ul, ul li {
     font-weight: 300;
 }
 
-ul {
+nav > ul {
     position: relative;
 }
 
-ul li {
+nav > ul li {
     float: left;
 }
 
-ul a:link, a:visited {
+nav > ul a:link, a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,12 +102,20 @@ main {
     background-color: white;
 }
 
+main2 {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    background-color: #fbfbfb;
+}
+
 div.title {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 75px auto 0 auto;
 }
 
 #col1 {
@@ -118,6 +126,11 @@ div.title {
     margin: 0 auto;
     padding-right: 15px;
 }
+#col1 > img {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
 
 #col2 {
     width: 30%;
@@ -126,6 +139,65 @@ div.title {
     line-height: 1.5em;
     margin: 0 auto;
     padding-left: 15px;
+}
+
+#col2 > img {
+    float: left;
+    align-items: baseline;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+div.borderline {
+    border-bottom: 1px solid orangered;
+    margin: 75px 0 0 0;
+}
+
+div.shortline {
+    border-bottom: 2px solid orangered;
+    margin: 30px auto;
+    width: 10%;
+}
+
+details {
+    display: inline-block;
+    border: 2px solid #000;
+    width: 63%;
+    height: 60px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    margin: 14px 0 20px 14px;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+}
+
+details:not([open]) {
+    height: 60px;
+}
+
+details[open] {
+    height: 240px;
+}
+
+details > img {
+    float: left;
+    margin: 5px 15px 0 14px;
+}
+
+details > h4 {
+    text-align: justify;
+    margin: 14px;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+summary {
+    list-style: none;
+}
+
+summary > h3 {
+    margin: 15px 0 15px 14px;
 }
 
 footer {

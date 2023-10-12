@@ -87,9 +87,11 @@ nav {
     border: 1px solid black;
 }
 
-div.logo {
+div.headline {
     position: relative;
-    padding: 100px 0 0 100px;
+    float: right;
+    text-align: right;
+    margin: 15% 10% 0 0;
 }
 
 main {
@@ -97,7 +99,7 @@ main {
     height: auto;
     display: inline-block;
     text-align: center;
-    background-color: white;
+    background-color: #fbfbfb;
 }
 
 main2 {
@@ -105,7 +107,7 @@ main2 {
     height: auto;
     display: inline-block;
     text-align: center;
-    background-color: #fbfbfb;
+    background-color: #ffffff;
 }
 
 main3 {
@@ -113,7 +115,7 @@ main3 {
     height: auto;
     display: inline-block;
     text-align: center;
-    background-color: white;
+    background-color: #fbfbfb;
 }
 
 main4 {
@@ -121,7 +123,7 @@ main4 {
     height: auto;
     display: inline-block;
     text-align: center;
-    background-color: #fbfbfb;
+    background-color: #ffffff;
 }
 
 main5 {
@@ -129,7 +131,7 @@ main5 {
     height: auto;
     display: inline-block;
     text-align: center;
-    background-color: white;
+    background-color: #fbfbfb;
 }
 
 main6 {
@@ -137,7 +139,7 @@ main6 {
     height: auto;
     display: inline-block;
     text-align: center;
-    background-color: #fbfbfb;
+    background-color: #ffffff;
 }
 
 div.title {
@@ -219,7 +221,7 @@ main5 > #col2 h3 {
 }
 
 main6 > #col1 {
-    border-right: 2px solid orangered;
+    border-right: 2px dashed orangered;
     height: 175px;
 }
 
@@ -238,9 +240,14 @@ main6 img {
     padding: 0 20px 0 0;
 }
 
-div.borderline {
+div.bottomline {
     border-bottom: 1px solid orangered;
     margin: 75px 0 0 0;
+}
+
+div.topline {
+    border-top: 1px solid orangered;
+    margin: 0;
 }
 
 div.shortline {
@@ -344,4 +351,5 @@ div.reserved {
 
 div.reserved > img {
     padding: 0 50px 0 0;
+    
 }

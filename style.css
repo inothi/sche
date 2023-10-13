@@ -59,6 +59,7 @@ nav {
     align-items: center;
     justify-content: center;
     position: fixed;
+    background: linear-gradient(#bdb76b, #bdb76b, 50%, #d0cc97, 96%, #bdb76b);
 }
 
 #menu > ul li {
@@ -67,8 +68,8 @@ nav {
     float: left;
     align-items: center;
     justify-content: center;
-    font-size: 12pt;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 #menu > ul li {
@@ -80,11 +81,18 @@ nav {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-color: dimgrey;
-    color: white;
+    color: #000;
     height: 30px;
     padding: 10px 30px;
-    border: 1px solid black;
+}
+
+#menu > ul li a:hover {
+    background: linear-gradient(#979255, #979255, 50%, #c3be79, 96%, #979255);
+}
+
+.separator {
+    border-left: 2px solid orangered;
+    height: 18px;
 }
 
 div.headline {
@@ -100,6 +108,7 @@ main {
     display: inline-block;
     text-align: center;
     background-color: #fbfbfb;
+    z-index: 3;
 }
 
 main2 {
@@ -225,6 +234,10 @@ main6 > #col1 {
     height: 175px;
 }
 
+main6 > #col2 {
+    margin: 0 0 75px 0;
+}
+
 main6 h3 {
     text-align: center;
     margin: 0 0 10px 0;
@@ -335,10 +348,11 @@ footer {
     width: 100%;
     height: 8vh;
     margin: 0;
-    background-color: darkkhaki;
+    background: linear-gradient(#bdb76b, #d0cc97, 50%, #bdb76b, 96%, #bdb76b);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
 }
 
 div.reserved {
@@ -351,5 +365,4 @@ div.reserved {
 
 div.reserved > img {
     padding: 0 50px 0 0;
-    
 }

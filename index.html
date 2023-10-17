@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <meta name="color-scheme" content="light only">
+-->    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i&display=swap" type="text/css" media="all" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -19,8 +20,23 @@
 <body>
     
 <header>
+    
+    <nav class="mobile_menu"><img src="./img/logo_sml.png">
+        <label for="mobile_menu_check" class="mobile_menu_button">
+            <input type="checkbox" id="mobile_menu_check" />
+            <div class="mobile_menu_hamburger"></div>
+            <ul class="mobile_menu_items">
+                <a href="#about"><li>O nas</li></a>
+                <a href="#offer"><li>Oferta</li></a>
+                <a href="#docs"><li>Dokumenty</li></a>
+                <a href="#prices"><li>Cennik</li></a>
+                <a href="#orders"><li>Zgłoszenia</li></a>
+                <a href="#contact"><li style="border: 0;">Kontakt</li></a>
+            </ul>
+        </label>
+    </nav>
 
-    <nav id="menu">
+    <nav class="menu">
         <ul>
             <li><a href="#about">O nas</a><div class="separator"></div></li>
             <li><a href="#offer">Oferta</a><div class="separator"></div></li>
@@ -34,21 +50,22 @@
     
 </header>
     
-<main>
+<main class="background_gray">
     <div class="topline" id="about"></div>
     <div class="title"><h2>Nasza działalność</h2></div>
     <div class="shortline"></div>
-    <div id="col1"><img src="./img/j.png">
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-    </div>
-    <div id="col2"><img src="./img/t.png">
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+    <div class="column">
+        <div class="col-1"><img src="./img/j.png">
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+        </div>
+        <div class="col-2"><img src="./img/t.png">
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+        </div>
     </div>
     <div class="bottomline" id="offer"></div>
-    
 </main>
     
-<main2>
+<main class="background_white">
     <div class="title"><h2>Czym się zajmujemy?</h2></div>
     <div class="shortline"></div>    
     <details class="gray">
@@ -86,11 +103,10 @@
             <h6></h6>
         <h4>Budynki produkcyjne i usługowe</h4>
     </details>
-    <div class="bottomline" id="docs"></div>
-    
-</main2>
+    <div class="bottomline" id="docs"></div>    
+</main>
 
-<main3>
+<main class="background_gray">
     <div class="title"><h2>Jakich informacji będziemy od Ciebie potrzebować?</h2></div>
     <div class="shortline"></div>    
     <details class="white">
@@ -108,67 +124,71 @@
     </details>
     <div class="subtitle"><h3>Masz pytania lub wątpliwości?<br />Zapraszam do <a href=#contact>kontaktu</a></h3></div>
     <div class="bottomline" id="prices"></div>
-
-</main3>
+</main>
     
-<main4>
-    
+<main class="background_white">
     <div class="title"><h2>Przykładowe ceny</h2></div>
     <div class="shortline"></div>
-    <div id="col1">
-        <h3>Audyty energetyczne:</h3>
-        <h4>Lokale mieszkalne do 50m&sup2;: <strong>500 zł</strong></h4>
-        <h4>Lokale mieszkalne 50-100m&sup2;: <strong>700 zł</strong></h4>
-        <h4>Domy jednorodzinne do 150m&sup2;: <strong>1200 zł</strong></h4>
-        <h4>Domy jednorodzinne pow. 150m&sup2;: <strong>1500 zł</strong></h4>
-        <h4>Program "Czyste powietrze": <strong>+400 zł</strong></h4>
-    </div>
-    <div id="col2">
-        <h3>Świadectwa energetyczne:</h3>
-        <h4>Lokale mieszkalne do 50m&sup2;: <strong>400 zł</strong></h4>    
-        <h4>Lokale mieszkalne 50-100m&sup2;: <strong>600 zł</strong></h4>
-        <h4>Domy jednorodzinne do 150m&sup2;: <strong>900 zł</strong></h4>
-        <h4>Domy jednorodzinne pow. 150m&sup2;: <strong>1200 zł</strong></h4>
-        <h4>Program "Czyste powietrze": <strong>+300 zł</strong></h4>
+    <div class="column">
+        <div class="col-1">
+            <h3>Audyty energetyczne:</h3>
+            <div class="white">
+                <h5>Lokale mieszkalne do 50m&sup2;: <strong>500 zł</strong></h5>
+                <h5>Lokale mieszkalne 50-100m&sup2;: <strong>700 zł</strong></h5>
+                <h5>Domy jednorodzinne do 150m&sup2;: <strong>1200 zł</strong></h5>
+                <h5>Domy jednorodzinne pow. 150m&sup2;: <strong>1500 zł</strong></h5>
+                <h5>Program "Czyste powietrze": <strong>+400 zł</strong></h5>
+            </div>
+        </div>
+        <div class="col-2">
+            <h3>Świadectwa energetyczne:</h3>
+            <div class="white">
+                <h5>Lokale mieszkalne do 50m&sup2;: <strong>400 zł</strong></h5>    
+                <h5>Lokale mieszkalne 50-100m&sup2;: <strong>600 zł</strong></h5>
+                <h5>Domy jednorodzinne do 150m&sup2;: <strong>900 zł</strong></h5>
+                <h5>Domy jednorodzinne pow. 150m&sup2;: <strong>1200 zł</strong></h5>
+                <h5>Program "Czyste powietrze": <strong>+300 zł</strong></h5>
+            </div>
+        </div>
     </div>
     <div class="bottomline" id="orders"></div>
-
-</main4>
+</main>
     
-<main5>
-    
-    <div class="title"><h2>Zamów usługę</h2></div>
+<main class="background_gray">
+    <div class="title"><h2>Zamów usługę z wyceną</h2></div>
     <div class="shortline"></div>
-    <div id="col1">
-        <h3>Wkrótce</h3>
-        <h4>Pracujemy nad wdrożeniem formularza</h4>
-    </div>
-    <div id="col2">
-        <h3>Wkrótce</h3>
-        <h4>Pracujemy nad wdrożeniem formularza</h4>
+    <div class="column">
+        <div class="col-1">
+            <h3>Wkrótce</h3>
+            <h4>Pracujemy nad wdrożeniem formularza</h4>
+        </div>
+        <div class="col-2">
+            <h3>Wkrótce</h3>
+            <h4>Pracujemy nad wdrożeniem formularza</h4>
+        </div>
     </div>
     <div class="bottomline" id="contact"></div>
-
-</main5>
+</main>
     
-<main6>
-    
+<main class="background_white" id="contact_box">
     <div class="title"><h2>Kontakt do nas</h2></div>
     <div class="shortline"></div>
-    <div id="col1">
-        <h3>Krzysztof Bilski</h3>
-        <h4>Specjalista ds. Audytów energetycznych</h4>
-        <h4><img src="./img/phone.png"><strong>+48 987 654 321</strong></h4>
-        <h4><img src="./img/email.png"><strong>krzysztof@kb.pl</strong></h4>
+    <div class="column">
+        <div class="col-1">
+            <h3>Krzysztof Bilski</h3>
+            <h4>Specjalista ds. Audytów energetycznych</h4>
+            <h4><img class="contact_img" src="./img/phone.png"><strong>+48 987 654 321</strong></h4>
+            <h4><img class="contact_img" src="./img/email.png"><strong>krzysztof@enebud.pl</strong></h4>
+        </div>
+        <div class="col-2">
+            <h3>Tomasz Ścieszka</h3>
+            <h4>Amatorszczyk ds. Świadectw energetycznych</h4>
+            <h4><img class="contact_img" src="./img/phone.png"><strong>+48 123 456 789</strong></h4>
+            <h4><img class="contact_img" src="./img/email.png"><strong>tomasz@enebud.pl</strong></h4>
+        </div>
     </div>
-    <div id="col2">
-        <h3>Tomasz Ścieszka</h3>
-        <h4>Amatorszczyk ds. Świadectw energetycznych</h4>
-        <h4><img src="./img/phone.png"><strong>+48 123 456 789</strong></h4>
-        <h4><img src="./img/email.png"><strong>tomasz@kb.pl</strong></h4>
-    </div>
-
-</main6>
+    <div class="margin_bottom"></div>
+</main>
     
 <footer>
     

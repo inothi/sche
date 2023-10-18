@@ -221,14 +221,14 @@ details {
     text-align: left;
     cursor: default;
     margin: 0;
-    transition: padding-bottom .2s ease, max-height .2s ease;
+    transition: padding-bottom 1s ease, max-height .5s ease;
     overflow: hidden;
     margin-bottom: 20px;
 }
 
 .white,
 #white {
-    background-color: #fff;    
+    background-color: #fff;
 }
 
 .gray,
@@ -263,7 +263,7 @@ details[open] + div.content {
     max-height: 600px;
     padding-bottom: 14px;
     cursor: default;
-    transition: padding-bottom .5s ease, max-height .5s ease;
+    transition: padding-bottom 1s ease, max-height .5s ease;
 }
 
 details[open] > summary::before {
@@ -434,6 +434,7 @@ footer {
         background-color: black;
         border-radius: 5px;
         transition: all var(--transition) ease;
+        z-index: 999999;
     }
     
     .mobile_menu_hamburger::before,

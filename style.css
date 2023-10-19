@@ -281,9 +281,9 @@ summary h3 {
     font-weight: 700;
     background-image: url(./img/arrow_right.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left top 6px;
     margin-left: 14px;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .white h5,
@@ -293,9 +293,9 @@ summary h3 {
     font-weight: 400;
     background-image: url(./img/arrow_right.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left top 6px;
     margin-left: 14px;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .white h6,
@@ -525,7 +525,7 @@ footer {
     }
     
     .column h5 {
-        margin-left: 10%;
+        margin-left: 15%;
     }
     
     #contact_box h4 {
@@ -534,7 +534,7 @@ footer {
     }
 
     #contact_box h5 img {
-        margin: 0 0 0 20%;
+        margin: 0 auto;
     }
 
     #contact_box .col-2 h3 {

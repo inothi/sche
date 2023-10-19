@@ -1,4 +1,4 @@
-html, body, a, center, div, h1, h2, h3, h4, h5, h6, img, p, span, strong, ul, li, ol {
+* {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -12,28 +12,33 @@ html {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3em;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2.25em;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
+}
+
+h6 {
+    font-size: .825em;
+    font-weight: 300;
 }
 
 strong {
@@ -290,6 +295,7 @@ summary h3 {
 .content h5 {
     text-align: justify;
     line-height: 1.5em;
+    font-size: 1em;
     font-weight: 400;
     background-image: url(./img/arrow_right.png);
     background-repeat: no-repeat;
@@ -303,6 +309,7 @@ summary h3 {
     text-align: justify;
     line-height: 1.5em;
     font-weight: 400;
+    font-size: 1em;
     background-image: url(./img/circle.png);
     background-repeat: no-repeat;
     background-position: left 55%;
@@ -353,22 +360,19 @@ footer {
 }
 
 .reserved > img {
+    width: 50px;
     padding: 0 50px 0 0;
 }
 
-/* smartphone styles */
-@media only screen and (orientation: portrait) and (max-width: 1081px) {
-    body {
-        background-color: white;
-    }
-    
+/* smartphone portrait styles */
+@media only screen and (orientation: portrait) and (max-width: 1081px) {    
     h1 {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 2.25em;
     }
     
     h2 {
-        font-size: 28px;
+        font-size: 1.75em;
         font-weight: 400;
     }
     
@@ -486,7 +490,7 @@ footer {
         text-align: center;
         transition: all var(--transition) ease-out;
         font-family: Lato;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 700;
         color: #000;
         list-style: none;
@@ -525,12 +529,16 @@ footer {
     }
     
     .column h5 {
-        margin-left: 15%;
+        margin: 0 5vw;
     }
     
     #contact_box h4 {
         text-align: center;
-        margin: 0 0 20px 0;
+        margin: 0 0 10px 0;
+    }
+    
+    #contact_box h5 {
+        margin-top: 15px;
     }
 
     #contact_box h5 img {
@@ -541,24 +549,21 @@ footer {
         margin: 75px 0 0 0;
     }
     
-    details {
-        width: 90%;
-    }
-    
+    details,
     .content {
         width: 90%;
     }
     
     details h3 {
-        font-size: 18px;
+        font-size: 1.125em;
     }
     
     details h4 {
-        font-size: 14px;
+        font-size: .875em;
     }
     
     details h6 {
-        font-size: 12px;
+        font-size: .75em;
     }
     
     summary::before {
@@ -567,5 +572,71 @@ footer {
     
     summary h3 {
         padding: 13px 50px 15px 14px;
+    }
+    
+    footer {
+        height: 5vh;
+    }
+    
+    .reserved {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-spacing: 2px;
+    }
+    
+    .reserved h6 {
+        font-size: .625em;
+    }
+
+    .reserved img {
+        width: 40px;
+        padding: 0 25px 0 0;
+    }
+}
+
+/* smartphone landscape styles */
+@media only screen and (orientation: landscape) and (max-width: 1081px) {
+    h1 {
+        font-weight: 700;
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.75em;
+        font-weight: 400;
+    }
+
+    .menu > ul li {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .menu > ul li a:link, a:visited {
+        height: auto;
+        padding: 8px 25px;
+    }
+
+    .separator {
+        border-left: 1px solid orangered;
+        height: 12px;
+    }
+    
+    .column {
+        grid-template-columns: repeat(2, 45%);
+    }
+    
+    header {
+        background-position: left -75px center;
+    }
+    
+    .headline {
+        margin: 30vh 2%;
+    }
+    
+    details,
+    .content {
+        width: 90%;
     }
 }
